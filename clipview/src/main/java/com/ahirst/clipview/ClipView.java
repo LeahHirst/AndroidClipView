@@ -94,10 +94,10 @@ public class ClipView extends FrameLayout {
     }
 
     public void setClipPadding(int left, int top, int right, int bottom) {
-        mPaddingLeft = left;
-        mPaddingTop = top;
-        mPaddingRight = right;
-        mPaddingBottom = right;
+        if (left != -1) mPaddingLeft = left;
+        if (top != -1) mPaddingTop = top;
+        if (right != -1) mPaddingRight = right;
+        if (bottom != -1) mPaddingBottom = bottom;
 
         invalidate();
     }
@@ -107,10 +107,10 @@ public class ClipView extends FrameLayout {
     }
 
     public void setClipRadius(int topLeft, int topRight, int bottomRight, int bottomLeft) {
-        mRadiusTopLeft = topLeft;
-        mRadiusTopRight = topRight;
-        mRadiusBottomRight = bottomRight;
-        mRadiusBottomLeft = bottomLeft;
+        if (topLeft != -1) mRadiusTopLeft = topLeft;
+        if (topRight != -1) mRadiusTopRight = topRight;
+        if (bottomRight != -1) mRadiusBottomRight = bottomRight;
+        if (bottomLeft != -1) mRadiusBottomLeft = bottomLeft;
 
         invalidate();
     }
