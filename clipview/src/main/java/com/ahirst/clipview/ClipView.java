@@ -154,7 +154,7 @@ public class ClipView extends FrameLayout {
 
         // Clip vertex
         if (mTopLeftVertX != 0 || mTopLeftVertY != 0 || mTopRightVertX != 0 || mTopRightVertY != 0
-                || mBottomLeftVertX != 0 || mBottomLeftVertY != 0 || mTopRightVertX != 0 || mBottomRightVertY != 0) {
+                || mBottomLeftVertX != 0 || mBottomLeftVertY != 0 || mBottomRightVertX != 0 || mBottomRightVertY != 0) {
             Path path = new Path();
 
             path.moveTo(mTopLeftVertX, mTopLeftVertY);
