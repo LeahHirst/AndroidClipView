@@ -1,4 +1,4 @@
-<div align="center">ClipView for Android</div>
+<div align="center"><h1>ClipView for Android</h1></div>
 <div align="center">ClipView is an Android library to allow for views to be clipped beyond what is currently possible with using Android's stock outline clipping.
 </div>
 <br>
